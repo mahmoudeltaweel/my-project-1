@@ -38,3 +38,76 @@ body {
         width: 1170px;
     }
 }
+
+/* start header */
+
+.header{
+    padding: 20px;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .container .logo {
+    width: 60px;
+}
+.header .container .links{
+    position: relative;
+}
+.header .container .links:hover .icon span:nth-child(2){
+        width: 100%;
+}
+
+.header .container .links .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+}
+.header .container .links .icon span{
+    
+    height: 2px;
+    background-color: black;
+    margin-bottom: 5px;
+}
+.header .container .links .icon span:first-child{
+    width: 100%;
+}
+.header .container .links .icon span:nth-child(2){
+    width: 50%;
+    transition: 0.3s;
+}
+.header .container .links .icon span:last-child{
+    width: 100%;
+}
+.header .container .links ul{
+    background-color: #f6f6f6;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    width: 168px;
+    display: none;
+}
+
+.header .container .links:hover ul{
+    display: block;
+}
+.header .container .links ul li a:hover{
+padding-left: 15px;
+}
+.header .container .links ul li a {
+    display: block;
+    height: 35px;
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    transition: 0.3s;
+}
+.header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+}
+
+/* end header */
